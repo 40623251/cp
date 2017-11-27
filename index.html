@@ -1,0 +1,186 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<title>
+2017 Spring 機械設計工程系網際內容管理
+</title>
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="data/reveal/reveal.css">
+    <link rel="stylesheet" href="data/reveal/black.css" id="theme">
+    
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="data/reveal/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'data/reveal/pdf.css' : 'data/reveal/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="data/reveal/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="reveal">
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section data-markdown>
+    <script type="text/template">
+## 設計一乙鄧靖宣40623251
+
+### 虎科大機械設計工程系
+
+<small>
+Created by [KMOLab](http://kmolab.github.io/blog/)
+</small>
+
+[40623251的CP課程網誌](blog/index.html)
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# W1
+
+* 課前準備
+* 準備筆記本、隨身碟與耳機,了解隨身系統的啟動關機與使用,了解機械設計本質, 六種表達與如何培養創造力
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# W2
+
+* 認識fossil並開始練習維護倉儲
+* 到自己的倉儲內登入,將倉儲名稱改成自己的學號,並且把timeline時間改回台灣時間,創建新的wiki並至wiki修改內容,可以到home看修改的內容
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# W3
+
+* 練習如何更新雲端倉儲內的資料
+* 在自己隨身碟內的資料夾,clone自己的倉儲和4052的倉儲,把pycache和FOSSIL的檔名之外的檔案複製到自己倉儲的資料夾內,之後用 fossil add . 把剛剛的資料新增上去再用 fossil commit -m" " 再把它推到遠端
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+    # W4
+
+* 開始練習如何用Leo來修改網誌
+* 利用 fossil status 查看內容與修正,用 Leo Editor 修改網誌,轉檔過程有錯誤時,需要使用fossil delete 把資料不要的資料刪掉,再fossil commit -m推到遠端.若要在近端檢查可以使用近端格式轉換,利用 https-server按鈕後檢驗, 再轉為遠端格式後推送.
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+    # W6
+* 複習前4週所學的內容並熟練
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+    #W7
+
+* 了解for迴圈與Eric6的簡易操作和語法
+* 練習用Share-X來錄製影片並上傳至youtobe和Vimeo再分享連結至個人網誌
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+    # W8
+
+* 複習上週的For迴圈與Eric6的操作
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+    # 學習心得
+    
+* 這幾週的課程讓我很驚豔,機械設計本質,六種表達與如何培養創造力,這些都是我不曾想過與接觸過的.開始了踏入程式的第一步,了解倉儲維護的方式和fossil的語法與其意義.再來學到的是利用Eric6做出計算機的基本架構,還有用for迴圈來寫出鑽石狀的字串.
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+# 自我課程評分
+
+* 62分
+
+						
+    </script>
+</section>
+
+						
+</div>
+
+</div>
+
+<script src="data/reveal/head.min.js"></script>
+<script src="data/reveal/reveal.js"></script>
+<script>
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+            // More info https://github.com/hakimel/reveal.js#dependencies
+            dependencies: [
+                { src: 'data/reveal/classList.js', condition: function() { return !document.body.classList; } },
+                { src: 'data/reveal/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                { src: 'data/reveal/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                { src: 'data/reveal/zoom.js', async: true },
+                { src: 'data/reveal/notes.js', async: true },
+                { src: 'data/reveal/math.js', async: true }
+            ]
+        });
+</script>
+</body>
+</html>
+
